@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Step project 3 - Cards</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles/reset.css"/>
+    <link rel="stylesheet" href="./styles/css.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="module" src="./scripts/index.js"></script>
+  </head>
+  <body>
+      <header id="header" class="header">
+        <div class="logo">
+          <a href="./" class="logo__text-link">
+            <p class="logo__text">
+              <span class="logo__text-marked">Al&Co</span><br>HEALTH
+            </p></a>
+          <a href="./" class="logo__image-link"
+          ><img class="logo__image" src="./assets/logo.png" alt="logo"></a>
+        </div>
+        <button class="calllogin" type="button">Log In</button>
+      </header>
+      <div class="filtercontainer">
+        <form class="filtration">
+          <input type="text" name="search" id="search" placeholder="Search" />
+          <select name="filterStatus" id="filterStatus">
+            <option value="">Status</option>
+            <option value="Open">Open</option>
+            <option value="Done">Done</option>
+          </select>
+          <select name="filterUrgency" id="filterUrgency">
+            <option value="">Urgency</option>
+            <option value="High">High</option>
+            <option value="Normal">Normal</option>
+            <option value="Low">Low</option>
+          </select>
+        </form>
+        <button class="filtersub">Filter</button>
+      </div>
+    <div class="container" id="container"></div>
+  </body>
+</html>
